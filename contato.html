@@ -17,7 +17,7 @@
       color: #333;
       text-align: justify;
     }
-    /* Marca d'água como fundo */
+
     body::before {
       content: "";
       position: fixed;
@@ -25,11 +25,11 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('marca-dagua.png'); /* substitua pelo nome da sua imagem */
+      background-image: url('marca-dagua.png');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      opacity: 0.1; /* controla a transparência */
+      opacity: 0.1;
       z-index: -1;
       pointer-events: none;
     }
@@ -80,7 +80,19 @@
       margin: 15px 0;
     }
 
-    /* Estilo do botão WhatsApp */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    form input,
+    form textarea,
+    form button {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
     .whatsapp-button {
       display: inline-block;
       background-color: #25D366;
@@ -97,7 +109,6 @@
       background-color: #1ebe5b;
     }
 
-    /* Estilo para o botão do grupo (cor mais escura) */
     .whatsapp-group-button {
       background-color: #075E54;
       margin-top: 10px;
