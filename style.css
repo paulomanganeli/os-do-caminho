@@ -11,7 +11,7 @@ body {
   text-align: justify;
 }
 
-/* Marca d'água em toda a página */
+/* Marca d'água de fundo */
 body::before {
   content: "";
   position: fixed;
@@ -19,7 +19,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('fundo.jpg'); /* Substitua pelo nome real da imagem */
+  background-image: url('marca-dagua.png'); /* imagem atualizada */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
